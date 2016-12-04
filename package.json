@@ -1,0 +1,33 @@
+{
+  "name": "cc-markdown-preview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --inline --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-to-react-components": "^0.2.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.24.0",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
