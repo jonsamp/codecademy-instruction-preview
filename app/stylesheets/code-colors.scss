@@ -10,7 +10,8 @@ pre[class*="language-"] {
 	color: white;
 	background: none;
 	text-shadow: none;
-	font-family: "Oxygen Mono", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: "Oxygen Mono", Monaco,Menlo,"Ubuntu Mono","Droid Sans Mono",Consolas,monospace;
+	font-weight: lighter;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -110,6 +111,7 @@ pre[class*="language-"] {
 .style .token.string,
 .token.attr-value {
 	color: hsl(45, 100%, 76%);
+	background-color: hsl(206, 21%, 26%);
 }
 
 .token.atrule,
