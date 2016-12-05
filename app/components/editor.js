@@ -8,7 +8,8 @@ const Editor = React.createClass({
     return {
       content: null, wordCount: 0,
       characterCount: 0,
-      exerciseLength: "--"
+      exerciseLength: "--",
+      readTime: "--"
     };
   },
   determinExerciseLength(wordCount) {
@@ -26,6 +27,14 @@ const Editor = React.createClass({
       return "Very Long";
     }
   },
+  calculateReadTime(wordCount) {
+
+    // Average reading time is 200wpm
+    // Since learners are reading code and having to look back at text, the reading time will likely be slower.
+    let minutes = Math.floor(wordCount/165);
+    let seconds = Math.round(((wordCount/165) - minutes) * 60);
+    return minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
+  },
   onTextareaChange(event) {
     let currentWordCount = event.target.value.length === 0
       ? 0
@@ -34,7 +43,8 @@ const Editor = React.createClass({
       content: MTRC(event.target.value).tree,
       wordCount: currentWordCount,
       characterCount: event.target.value.length,
-      exerciseLength: this.determinExerciseLength(currentWordCount)
+      exerciseLength: this.determinExerciseLength(currentWordCount),
+      readTime: this.calculateReadTime(currentWordCount)
     });
   },
   render() {
@@ -55,6 +65,8 @@ const Editor = React.createClass({
           <div className="value">{this.state.characterCount}</div>
           <div className="title">Word Count</div>
           <div className="value">{this.state.wordCount}</div>
+          <div className="title">Read Time</div>
+          <div className="value">{this.state.readTime}</div>
           <div className="title">Length</div>
           <div className="value">{this.state.exerciseLength}</div>
         </div>
