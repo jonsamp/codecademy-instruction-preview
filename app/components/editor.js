@@ -16,11 +16,11 @@ const Editor = React.createClass({
     if (wordCount < 20) {
       return "Short";
     } else if (wordCount < 80) {
-      return "Medium - Short";
+      return "Short - Average";
     } else if (wordCount < 160) {
-      return "Medium";
+      return "Average";
     } else if (wordCount < 240) {
-      return "Medium - Long";
+      return "Average - Long";
     } else if (wordCount < 300) {
       return "Long";
     } else if (wordCount > 300) {
@@ -65,7 +65,7 @@ const Editor = React.createClass({
           <div className="value">{this.state.characterCount}</div>
           <div className="title">Word Count</div>
           <div className="value">{this.state.wordCount}</div>
-          <div className="title">Read Time</div>
+          <div className="title">Reading Time</div>
           <div className="value">{this.state.readTime}</div>
           <div className="title">Length</div>
           <div className="value">{this.state.exerciseLength}</div>

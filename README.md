@@ -1,6 +1,6 @@
 # Codecademy Instructions Preview
 
-<img width="600" src="https://cloud.githubusercontent.com/assets/6455018/20869641/60770846-ba3c-11e6-8e53-c7b90aef718c.png">
+<img width="600" src="https://cloud.githubusercontent.com/assets/6455018/20874400/17ec157c-ba77-11e6-82d6-ea6d57438554.png">
 
 Utility for previewing markdown in the Codecademy instructions pane. Visit the utility [here](https://jonsamp.github.io/codecademy-instruction-preview/).
 
@@ -13,4 +13,5 @@ In addition, stats about the exercise are shown on the right.
 #### Known Issues
 
 - The markdown conversion does not play well with code snippets inside of lists.
+- Code highlighting is close to actual highlighting, but may be off with certain code words.
 - CSS is not code highlighted in code blocks.
