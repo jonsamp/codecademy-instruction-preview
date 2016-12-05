@@ -21528,11 +21528,11 @@
 	    if (wordCount < 20) {
 	      return "Short";
 	    } else if (wordCount < 80) {
-	      return "Medium - Short";
+	      return "Short - Average";
 	    } else if (wordCount < 160) {
-	      return "Medium";
+	      return "Average";
 	    } else if (wordCount < 240) {
-	      return "Medium - Long";
+	      return "Average - Long";
 	    } else if (wordCount < 300) {
 	      return "Long";
 	    } else if (wordCount > 300) {
@@ -21558,7 +21558,7 @@
 	    });
 	  },
 	  render: function render() {
-	    return _react2.default.createElement('div', { className: 'md-panes' }, _react2.default.createElement('div', { className: 'instructions' }, _react2.default.createElement('div', { className: 'learn-header' }, 'Learn'), _react2.default.createElement('div', { className: 'markdown-output' }, this.state.content)), _react2.default.createElement('textarea', { onChange: this.onTextareaChange }), _react2.default.createElement('div', { className: 'text-analysis' }, _react2.default.createElement('div', { className: 'title' }, 'Character Count'), _react2.default.createElement('div', { className: 'value' }, this.state.characterCount), _react2.default.createElement('div', { className: 'title' }, 'Word Count'), _react2.default.createElement('div', { className: 'value' }, this.state.wordCount), _react2.default.createElement('div', { className: 'title' }, 'Read Time'), _react2.default.createElement('div', { className: 'value' }, this.state.readTime), _react2.default.createElement('div', { className: 'title' }, 'Length'), _react2.default.createElement('div', { className: 'value' }, this.state.exerciseLength)));
+	    return _react2.default.createElement('div', { className: 'md-panes' }, _react2.default.createElement('div', { className: 'instructions' }, _react2.default.createElement('div', { className: 'learn-header' }, 'Learn'), _react2.default.createElement('div', { className: 'markdown-output' }, this.state.content)), _react2.default.createElement('textarea', { onChange: this.onTextareaChange }), _react2.default.createElement('div', { className: 'text-analysis' }, _react2.default.createElement('div', { className: 'title' }, 'Character Count'), _react2.default.createElement('div', { className: 'value' }, this.state.characterCount), _react2.default.createElement('div', { className: 'title' }, 'Word Count'), _react2.default.createElement('div', { className: 'value' }, this.state.wordCount), _react2.default.createElement('div', { className: 'title' }, 'Reading Time'), _react2.default.createElement('div', { className: 'value' }, this.state.readTime), _react2.default.createElement('div', { className: 'title' }, 'Length'), _react2.default.createElement('div', { className: 'value' }, this.state.exerciseLength)));
 	  }
 	});
 
