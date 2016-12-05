@@ -13,17 +13,13 @@ const Editor = React.createClass({
     };
   },
   determinExerciseLength(wordCount) {
-    if (wordCount < 20) {
+    if (wordCount < 60) {
       return "Short";
-    } else if (wordCount < 80) {
-      return "Short - Average";
     } else if (wordCount < 160) {
       return "Average";
-    } else if (wordCount < 240) {
-      return "Average - Long";
-    } else if (wordCount < 300) {
+    } else if (wordCount < 260) {
       return "Long";
-    } else if (wordCount > 300) {
+    } else {
       return "Very Long";
     }
   },
