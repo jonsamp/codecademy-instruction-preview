@@ -17,9 +17,9 @@ pre[class*="language-"] {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	word-wrap: normal;
+	word-wrap:	normal;
 	line-height: 1.5;
-  font-size: 14px;
+  font-size: 13px;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -103,7 +103,6 @@ pre[class*="language-"] {
 	color: hsl(75, 59%, 58%);
 }
 
-.token.operator,
 .token.entity,
 .token.string,
 .token.url,
@@ -111,18 +110,20 @@ pre[class*="language-"] {
 .style .token.string,
 .token.attr-value {
 	color: hsl(45, 100%, 76%);
-	background-color: hsl(206, 21%, 26%);
 }
 
-.token.atrule,
-.token.keyword {
+
+.token.operator {
 	color: hsl(220, 100%, 85%);
+	background-color: hsl(206, 21%, 26%);
 }
 
 .token.function {
 	color: hsl(345, 75%, 64%);
 }
 
+.token.atrule,
+.token.keyword,
 .token.regex,
 .token.important,
 .token.variable {

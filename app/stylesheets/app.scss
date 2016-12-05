@@ -16,7 +16,7 @@ body {
 }
 
 textarea {
-  font-family: "Oxygen Mono", monospace;
+  font-family: "Courier New", monospace;
   font-size: 16px;
   padding: 1em;
   border: none;
@@ -107,14 +107,20 @@ textarea {
 
 code {
   padding: 0 0.25rem;
-    margin: 0 0.0625rem;
-    border-radius: 0.125rem;
-    color: #204056;
-    background-color: #D4D5D6;
-    white-space: nowrap;
-    vertical-align: baseline;
-    font-family: Monaco,Menlo,"Ubuntu Mono","Droid Sans Mono",Consolas,monospace;
-    font-size: .95em;
+  margin: 0 0.0625rem;
+  border-radius: 0.125rem;
+  color: #204056;
+  background-color: #D4D5D6;
+  white-space: nowrap;
+  vertical-align: baseline;
+  font-family: "Oxygen Mono", Monaco,Menlo,"Ubuntu Mono","Droid Sans Mono",Consolas,monospace;
+  font-size: .95em;
+}
+
+pre code {
+  padding: 0;
+  margin: 0;
+  font-family: "Oxygen Mono", Monaco,Menlo,"Ubuntu Mono","Droid Sans Mono",Consolas,monospace;
 }
 
 li {
